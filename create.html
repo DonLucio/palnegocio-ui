@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pa'l Negocio: Root</title>
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <link rel="stylesheet" href="css/pnroot.css">
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="uk-navbar-container uk-margin uk-navbar-transparent pn-bg-navbar" uk-navbar>
+            <div class="uk-navbar-left">
+        
+                <a class="uk-navbar-item uk-logo" href="#">
+                    <img data-src="images/logo-inv.svg" width="150"  alt="logo" uk-svg>
+                </a>
+                <ul class="uk-navbar-nav">
+                    <li>                   
+                        <a href="#">
+                            <span class="uk-icon uk-margin-small-right pn-text-white" uk-toggle="target: #offcanvas-push" uk-icon="icon: menu; ratio: 1.3"></span>
+                        </a>
+                    </li>
+                </ul>                
+        
+            </div>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li>
+                        <a href="#">
+                            <span class="uk-icon uk-margin-small-right pn-text-white" uk-icon="icon: bell; ratio: 1.4"></span>
+                            
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="uk-border-circle" data-src="https://api.adorable.io/avatars/285/abott@adorable.png" width="40" height="40" alt="Foto" uk-img>
+                        </a>
+                        <div  uk-dropdown="offset: 0" class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-list uk-navbar-dropdown-nav">
+                                <li class="uk-nav-header">Gonzalo Lucio</li>
+                                <li class="uk-nav-divider"></li>                                
+                                <li>
+                                    <a href="#" class="uk-margin-small-right uk-icon" uk-icon="icon: user;">                                        
+                                        Perfil                                       
+                                    </a>
+                                </li>
+                                <li><a href="#">Clave</a></li>
+                                <li><a href="#">Avatar</a></li>
+                                
+                                <li><a href="#">Notificaciones</a></li>
+                                <li><a href="#">Mensajes</a></li>                                
+                                <li class="uk-nav-divider"></li>
+                                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: sign-out"></span>Salir</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="offcanvas-push" uk-offcanvas="mode: push; overlay: true;">
+            <div class="uk-offcanvas-bar pn-bg-aside">                
+                <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+                    <li class="uk-nav-header">Administrador</li>
+                    <li class="uk-nav-divider"></li>
+                    <li class="uk-active"><a href="#">Categoria</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Marcas</a></li>
+                    <li class="uk-parent">
+                        <a href="#">Usuarios</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="#">Sub item</a></li>
+                            <li><a href="#">Sub item</a></li>
+                        </ul>
+                    </li>
+                    <li class="uk-parent">
+                        <a href="#">Localidades</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="#">Sub item</a></li>
+                            <li><a href="#">Sub item</a></li>
+                        </ul>
+                    </li>
+                    <li class="uk-parent">
+                        <a href="#">Empresas</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="#">Sub item</a></li>
+                            <li><a href="#">Sub item</a></li>
+                        </ul>
+                    </li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: sign-out"></span> Salir</a></li>
+                </ul>
+        
+            </div>
+        </div>
+    </header>
+    <main class="uk-container">
+        <ul class="uk-breadcrumb">
+            <li><a class="uk-link-heading" href="index.html">Categoria</a></li>
+            <li>Crear</li>            
+        </ul>
+        <div uk-grid>
+            <div class="uk-width-1-2">
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-header">
+                        <h3 class="uk-card-title">Crear Registro</h3>
+                    </div>
+                    <div class="uk-card-body">
+                        <form>
+                            <fieldset class="uk-fieldset">
+                
+                                <div class="uk-margin">
+                                    <input class="uk-input" type="text" placeholder="Input">
+                                </div>
+                
+                                <div class="uk-margin">
+                                    <select class="uk-select">
+                                        <option>Option 01</option>
+                                        <option>Option 02</option>
+                                    </select>
+                                </div>
+                
+                                <div class="uk-margin">
+                                    <textarea class="uk-textarea" rows="5" placeholder="Textarea"></textarea>
+                                </div>
+                
+                                <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                                    <label><input class="uk-radio" type="radio" name="radio2" checked> A</label>
+                                    <label><input class="uk-radio" type="radio" name="radio2"> B</label>
+                                </div>
+                
+                                <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                                    <label><input class="uk-checkbox" type="checkbox" checked> A</label>
+                                    <label><input class="uk-checkbox" type="checkbox"> B</label>
+                                </div>
+                
+
+                                <button class="uk-button uk-button-primary uk-width-1-1 uk-margin-small-bottom">Guardar</button>
+                                <button class="uk-button uk-button-muted uk-width-1-1">Cancelar</button>
+                
+                            </fieldset>
+                        </form> 
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-1-2">
+                <ul class="uk-list uk-list-striped">
+                    <li>List item 1</li>
+                    <li>List item 2</li>
+                    <li>List item 3</li>
+                </ul>       
+                <ul class="uk-pagination uk-flex-right uk-margin-medium-top" uk-margin>
+                    <li><a href="#"><span class="uk-margin-small-right" uk-pagination-previous></span> Ant.</li>
+                    <li><a href="#">1</a></li>                    
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li class="uk-active"><span>7</span></li>
+                    <li><a href="#">8</a></li>
+                    <li class="uk-margin-auto-left"><a href="#">Sig. <span class="uk-margin-small-left" uk-pagination-next></span></a></li>
+                </ul>             
+            </div>
+        </div>
+       
+        
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
