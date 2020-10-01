@@ -1,9 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap')
+.pn-navbar
+    padding: 0 22.5px
 .pn-bg-aside
-    background: #3c3f42ff
     background: url('../images/senora2.png') center
     background-size: cover
-    font-family: 'Comfortaa', cursive
+    padding-top: 0
+    .uk-navbar-nav
+        margin-left: -17px
+    .uk-navbar-item
+        justify-content: start
+        padding: 0px
+    .pn-sidebard-header
+        color: #FFF;
+        .pn-user-info
+            padding-left: 1em
+            p, small
+                padding: 0
+                margin: 0
+        .pn-user-info-name
+            font-size: 1.2em
+        .pn-user-info-email 
+            font-size: 1em
+        
 .pn-bg-navbar
     background: #184798ff
 .pn-text-white
@@ -11,5 +28,11 @@
     font-size: 3em !important
 .uk-table 
     cursor: pointer
-
-        
+.uk-heading-bullet
+    &::before
+        border-left-color: #184798
+.uk-table th 
+    font-weight: 600;
+    color: #184798
+.uk-button
+    border-radius: 20px

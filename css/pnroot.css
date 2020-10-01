@@ -1,9 +1,43 @@
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+.pn-navbar {
+  padding: 0 22.5px;
+}
+
 .pn-bg-aside {
-  background: #3c3f42ff;
   background: url("../images/senora2.png") center;
   background-size: cover;
-  font-family: 'Comfortaa', cursive;
+  padding-top: 0;
+}
+
+.pn-bg-aside .uk-navbar-nav {
+  margin-left: -17px;
+}
+
+.pn-bg-aside .uk-navbar-item {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding: 0px;
+}
+
+.pn-bg-aside .pn-sidebard-header {
+  color: #FFF;
+}
+
+.pn-bg-aside .pn-sidebard-header .pn-user-info {
+  padding-left: 1em;
+}
+
+.pn-bg-aside .pn-sidebard-header .pn-user-info p, .pn-bg-aside .pn-sidebard-header .pn-user-info small {
+  padding: 0;
+  margin: 0;
+}
+
+.pn-bg-aside .pn-sidebard-header .pn-user-info-name {
+  font-size: 1.2em;
+}
+
+.pn-bg-aside .pn-sidebard-header .pn-user-info-email {
+  font-size: 1em;
 }
 
 .pn-bg-navbar {
@@ -17,5 +51,18 @@
 
 .uk-table {
   cursor: pointer;
+}
+
+.uk-heading-bullet::before {
+  border-left-color: #184798;
+}
+
+.uk-table th {
+  font-weight: 600;
+  color: #184798;
+}
+
+.uk-button {
+  border-radius: 20px;
 }
 /*# sourceMappingURL=pnroot.css.map */
