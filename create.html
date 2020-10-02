@@ -4,28 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pa'l Negocio: Root</title>
-    <link rel="stylesheet" href="css/uikit.min.css">
-    <link rel="stylesheet" href="css/pnroot.css">
-    <script src="js/uikit.min.js"></script>
-    <script src="js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="/css/uikit.min.css">
+    <link rel="stylesheet" href="/css/pnroot.css">
+    <script src="/js/uikit.min.js"></script>
+    <script src="/js/uikit-icons.min.js"></script>
 </head>
 <body>
     <header>
-        <nav class="uk-navbar-container uk-margin uk-navbar-transparent pn-bg-navbar" uk-navbar>
+        <nav class="uk-navbar-container uk-margin uk-navbar-transparent pn-bg-navbar pn-navbar" uk-navbar>
             <div class="uk-navbar-left">
-        
-                <a class="uk-navbar-item uk-logo" href="#">
-                    <img data-src="images/logo-inv.svg" width="150"  alt="logo" uk-svg>
-                </a>
                 <ul class="uk-navbar-nav">
                     <li>                   
                         <a href="#">
                             <span class="uk-icon uk-margin-small-right pn-text-white" uk-toggle="target: #offcanvas-push" uk-icon="icon: menu; ratio: 1.3"></span>
                         </a>
                     </li>
-                </ul>                
-        
+                </ul>
             </div>
+            <a class="uk-navbar-item uk-padding-remove uk-logo" href="#">
+                <img data-src="images/logo-inv.svg" width="150"  alt="logo" uk-svg>
+            </a>
             <div class="uk-navbar-right">
                 <ul class="uk-navbar-nav">
                     <li>
@@ -40,10 +38,10 @@
                         </a>
                         <div  uk-dropdown="offset: 0" class="uk-navbar-dropdown">
                             <ul class="uk-nav uk-list uk-navbar-dropdown-nav">
-                                <li class="uk-nav-header">Gonzalo Lucio</li>
+                                <li class="uk-nav-header">Gonzalo Andrés Lucio López</li>
                                 <li class="uk-nav-divider"></li>                                
                                 <li>
-                                    <a href="#" class="uk-margin-small-right uk-icon" uk-icon="icon: user;">                                        
+                                    <a href="profile.html" class="uk-margin-small-right uk-icon" uk-icon="icon: user;">                                        
                                         Perfil                                       
                                     </a>
                                 </li>
@@ -60,19 +58,43 @@
                 </ul>
             </div>
         </nav>
-        <div id="offcanvas-push" uk-offcanvas="mode: push; overlay: true;">
-            <div class="uk-offcanvas-bar pn-bg-aside">                
+        <div id="offcanvas-push" uk-offcanvas="mode: slide; overlay: true;">
+            <div class="uk-offcanvas-bar pn-bg-aside">
+                <ul class="uk-navbar-nav">
+                    <li>                   
+                        <a href="#">
+                            <span class="uk-icon uk-margin-small-right pn-text-white" uk-toggle="target: #offcanvas-push" uk-icon="icon: menu; ratio: 1.3"></span>
+                        </a>
+                    </li>
+                    
+                    <a class="uk-navbar-item uk-logo" href="#">
+                        <img data-src="images/logo-inv.svg" width="150"  alt="logo" uk-svg>
+                    </a>
+                </ul>  
+
                 <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
-                    <li class="uk-nav-header">Administrador</li>
                     <li class="uk-nav-divider"></li>
-                    <li class="uk-active"><a href="#">Categoria</a></li>
+                    
+                    <li class="pn-sidebard-header uk-flex-inline uk-flex-middle"> 
+                        <div class="uk-width-1-5 uk-flex-first">
+                            <img class="uk-border-circle" data-src="https://api.adorable.io/avatars/285/abott@adorable.png" alt="Foto" uk-img>
+                        </div>
+                        
+                        <div class="pn-user-info">
+                            <p class="uk-text-meta uk-margin-remove-bottom">Administrador</p>
+                            <h3 class="uk-card-title uk-text-bold uk-margin-remove-vertical pn-user-info-email ">Gonzalo Andrés Lucio López</h3>
+                            <a href="profile.html" class="uk-link-muted">Mi Perfil</a>
+                        </div>
+                    </li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="index.html">Categoria</a></li>
                     <li><a href="#">Productos</a></li>
                     <li><a href="#">Marcas</a></li>
                     <li class="uk-parent">
                         <a href="#">Usuarios</a>
                         <ul class="uk-nav-sub">
-                            <li><a href="#">Sub item</a></li>
-                            <li><a href="#">Sub item</a></li>
+                            <li><a href="usuario.html">Manager</a></li>
+                            <li><a href="usuario.html">Empresario</a></li>
                         </ul>
                     </li>
                     <li class="uk-parent">
@@ -90,7 +112,7 @@
                         </ul>
                     </li>
                     <li class="uk-nav-divider"></li>
-                    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: sign-out"></span> Salir</a></li>
+                    <li><a href="login.html"><span class="uk-margin-small-right" uk-icon="icon: sign-out"></span> Salir</a></li>
                 </ul>
         
             </div>
